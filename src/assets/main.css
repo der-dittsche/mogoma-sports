@@ -56,7 +56,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 100;
+  z-index: 10;
 }
 
 .logo {
@@ -318,5 +318,105 @@ span {
   max-width: 100%;
   object-fit: contain;
   border-radius: 2rem;
-  box-shadow: 1px 1px 10px 1px var(--main-color);
+  box-shadow: 1px 1px 10px 1px var(--text-second);
+}
+
+.service-layer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-block: 2rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+.modal {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(7px);
+}
+
+.modalbox {
+  position: absolute;
+  background-color: var(--bg-color);
+  border-radius: 2rem;
+  box-shadow: 5px 5px 50px 10px var(--main-color);
+}
+
+.modalbox-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-inline: 5rem;
+  padding-block: 2rem;
+}
+
+.modal-close-btn {
+  cursor: pointer;
+  width: 100%;
+  position: relative;
+  text-align: right;
+  font-size: 2rem;
+  top: 1rem;
+  right: 1rem;
+}
+
+.modalbox ul {
+  list-style: none;
+  padding-left: 2rem;
+}
+
+.contact-box button {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.contact__text {
+  padding-block: 2rem;
+}
+
+.contact__form {
+  margin-block: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact__form-head {
+  gap: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__form-head .input__container {
+  width: 100%;
+}
+
+.input__container input,
+.input__container textarea {
+  width: 100%;
+  background-color: var(--bg-color);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 10px 1px var(--text-color);
+  padding: 1rem;
+  color: var(--text-color);
+}
+
+.input__container textarea {
+  resize: none;
+  height: 150px;
+}
+
+.footer {
+  min-height: fit-content;
 }
