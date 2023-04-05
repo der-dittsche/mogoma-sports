@@ -1,9 +1,10 @@
 <template>
-  <h1>Contact</h1>
+  <h1>Kontakt</h1>
   <p class="contact__text">
     Du möchtest mehr darüber wissen, wie die Training-Einheiten stattfinden? Oder hast du interesse
     an einenr Individuellen Ernährungsberatung?
   </p>
+  <p>Dann nutz hier die Möglichkeit mir zu schreiben</p>
   <div class="contact-box">
     <form ref="contactform" @submit.prevent="sendEmail" class="contact__form">
       <div class="contact__form-head">

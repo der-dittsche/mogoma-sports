@@ -1,5 +1,5 @@
 <template>
-  <nav v-for="(linkItem, index) in navLinks" :key="index" class="navbar">
+  <nav v-for="(linkItem, index) in navLinks" :key="index">
     <RouterLink
       :to="linkItem.path"
       @click="$emit('sending-start')"

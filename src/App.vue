@@ -5,7 +5,9 @@
       <i class="bx bx-menu" :class="{ hidden: togglenav }"></i>
       <i class="bx bx-x" :class="{ hidden: !togglenav }"></i>
     </div>
-    <NavbarView :navLinks="navLinks" @sending-start="getToggleStatus" />
+    <div class="navbar" :class="{ showmobile: togglenav }">
+      <NavbarView :navLinks="navLinks" @sending-start="getToggleStatus" />
+    </div>
   </header>
 
   <main>

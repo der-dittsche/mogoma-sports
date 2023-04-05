@@ -1,5 +1,5 @@
 <template>
-  <h1>Service</h1>
+  <h1>Angebote</h1>
   <div class="service-header">
     <img src="../../assets/images/manu-fight2.jpeg" alt="" />
     <h2>Du möchtest auch in den Ring?</h2>
